@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<body>
+<head> 
+<link href = "sweetshelf.css" rel = "stylesheet" type = "text/css">
+</head>
+<header> 	
+<a href = "landing page.html"><img src = "logo.jpg" ALT= "Oops! This image is missing from your browser." width = '135' height = '40' class = "logo"> </a>
+<nav>
+<ul> 
+<li> <a href = "Fiction page.html"> Fiction </a> </li>
+<li> <a href = "Non-fiction books.html"> Non-fiction </a> </li>
+<li> <a href = "Educational.html"> Educational </a> </li>
+<li> <a href = "kidsbooks.html"> Children's </a> </li>
+<li> <a href = "Customer Support.html"> Customer Support </a> </li>
+<li> <form action = 'Genericbooklink.php' method = 'post'>  <input type='text' placeholder='Search for a book...' name = 'bookname'> <input type = 'submit' value = 'Search' name = 'display'> </form> </li>
+</ul>
+</nav>
+</header>
+<div class = "logout">
+<form action = "index.html" method = "post"> <input type = "submit" value = "Log Out"> </form> </div> 
+
+
+<div class = "wrapper">
+<p> 
+<p> <h3 class = "h3two"> How can we help? </h3> </p>
+
+<p class = "center"> Here at Sweetshelf, we make sure our customers leave our stores (both online and offline) completely satisfied. <br>
+We understand that sometimes you can run into problems with the products and services we want to supply you with,<br>
+please don't be too shy to send in a support ticket for help. </p>
+
+<br>
+<br>
+<h3 class = "h3two"> Send in a ticket &#38 we'll get back to you! </h3> <br> 
+ <!--below is a form that submits inputs to ticketsubmit.php by the post method, 
+ where the data is inserted into the support_tickets table in the sweetshelf database and then, on that page,
+ the user has the option to view their ticket details by clicking a form submit button that loads ticketdetails.py.
+(ticketdetails.py is a python page that accepts hidden inputs from ticketsubmit.php to display the details of the user's submitted support ticket).-->
+<p><form action='ticketsubmit.php' method='post' class = 'center'>
+<p><label for='email'>Please enter your email:</label></p><br>
+<p><input type='text' name = 'email' required></p> <br>
+<!--each of these inputs making up the support ticket; named, 'email', 'ticket_category' and 'ticket_content' respectively, are sent to ticketsubmit.php-->
+<label for="ticket_category">Where are you having trouble?</label>  <br>
+<label for="Delivery"> Delivery </label><br>
+<input type="radio" id="Delivery" name="ticket_category" value="Delivery">  
+<p><label for="Prices & Payment Methods"> Prices &#38 Payment Methods </label></p> 
+<p><input type="radio" id="Prices & Payment Methods" name="ticket_category" value="Prices & Payment Methods"></p> <br>
+<p><label for="Returns & Pre-orders"> Returns &#38 Pre-orders </label></p> 
+<p><input type="radio" id="Returns & Pre-orders" name="ticket_category" value="Returns & Pre-orders"></p> <br>
+<p><label for="Security">Security</label></p> 
+<p><input type="radio" id="Security" name="ticket_category" value="Security"></p> <br><br>
+<p><label for='ticket_content'> Tell us what's wrong: </label></p><br>
+<p><input type='text' name = 'ticket_content' class='ticketcomment' required></p><br>
+<p><input type="submit" value="Send"></p> <br>
+</form>
+<p class = 'center'> (Please be aware that you can only submit one valid ticket at once!) </p>
+</div>
+</body>
+<br>
+<br>
+<div class = "bottom">
+ <ul> 
+<li> <a href = "FAQ.html" > FAQ </a> </li>
+<li> <a href = "Terms of Use.html"> Terms &#38 Conditions </a> </li>
+<li> <a href = "Privacy Policy.html"> Privacy Policy </a> </li>
+<li> <a href = "About Us.html"> About Us </a> </li>
+</ul>
+ </div>
+
+
+</html>

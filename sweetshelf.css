@@ -1,0 +1,503 @@
+/*bookstore.css*/
+
+/*html*/
+html {
+	padding:0;
+	margin: 0;
+	height: 100%;
+}
+
+/*body*/
+body {
+	background-color: white;
+	margin: 0;
+	font-family: "Perpetua";
+	font-weight: 398;
+	height: 100%;
+	padding: 0;
+}
+
+
+/*header*/
+header {
+	background-color: #5f9c82;
+	margin-bottom: 1%;
+}
+
+
+
+
+/*centering elements*/	
+.center {
+	text-align: center;
+}
+
+.FAQp {
+	background-color: white;
+	margin: 0;
+	font-family: "Perpetua";
+	font-weight: 398;
+	height: 100%;
+	padding: 0;
+}
+
+/*header clear-fix*/
+header::after {
+   content: " "; 
+   visibility: hidden;  /*this creates a child element after my header that is not visible and is cleared from both left and right. 
+	By cleared I mean it does not go adjacent to t	he above floating elements; it stacks horizontally. 
+	this child element is not visible, but it forces the rest of the page to keep the header stacked horizontally.*/
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/*logo class - floats left and has padding on top and margin on left.*/
+.logo {
+	float: left;
+	padding: 10px 0;
+	margin-left: 10px;
+ }
+ 
+
+
+/*general nav bar*/
+nav {
+	float: right;
+}
+/*unordered list of hyperlinks' traits*/
+nav ul {
+	margin-top: 23px;
+	padding: 0;
+	list-style: none;
+	
+}
+/*list item traits*/
+nav li {
+	display: inline-block; 
+	margin-left: 70 px;
+	padding-top: 23 px;
+	margin-right: 40px;
+	
+	position: relative;
+}
+p{
+  margin:0;
+}
+
+
+/*hyperlink traits*/
+nav a {
+ color: white;  
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px; 
+ margin-left: 60px;
+}
+/*hyperlink hover effect*/
+nav a:hover {
+	color:  #3c6352;
+}
+
+
+/*wrapper for a book's webpage*/
+.book_page {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+/*header5s in a book's webpage*/
+.book_page h5 {
+	text-align: center;
+	margin-top: 2%;
+}
+
+/*paragraphs in a book's webpage*/
+.book_page p {
+	text-align: center;
+	margin-top: 20%;
+}
+
+/*listofbooks (is in-line, prioritizes adjacency).*/
+.book-list {
+	margin-top: 23px;
+	padding: bottom 30px;
+	list-style: none;
+	display: inline-block; 
+}
+
+
+
+/*genericwrapperforelements*/
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+
+/*a book's profile elements' wrapper*/
+.book_profile {
+	margin: 0%;
+	
+
+	
+	padding:0;
+	text-align: center;
+	text-align: center;
+}
+/*a book's profile's hyperlinks */
+.book_profile a {
+ text-decoration: none;
+ text-transform: uppercase;
+ color: black;
+}
+
+/*a book's page's image elements */
+.book_page_image {
+	margin-right: auto;
+	margin-left: auto;
+	padding:0;
+	max-width: 960px;
+	max-width: 156px;
+	text-align: center;
+	margin-top:0;
+}
+
+/*a book's image (individual element)*/
+.book_image {
+	margin-right:0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	
+}
+
+
+
+/*wrapper for the body of a book's profile elements */
+.book_body {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 320px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+/*wrapper for the title of a book (individual element) */
+.book_title {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 960px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+} 
+
+
+
+/*wrapper for the author of a book (individual element) */
+.book_author {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 960px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+/*wrapper for the price of a book (individual element) */
+.book_price {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 960px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+/*the wrapper for the form of any book's purchase link */
+.book_link {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 960px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+/*bottom for a book's web-page*/
+.bottombookpage {
+	margin-left: 0;
+	margin-right:0;
+	background: #5f9c82;
+	padding-bottom: 1%;
+	margin-top: 15%;
+}
+
+/*bottom for a book's web-page hyperlinks*/
+.bottombookpage a {
+ color: white;  
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px; 
+ position: center;
+ }
+/*bottom for a book's web-page list*/
+.bottombookpage ul {
+	margin-left: 5%;
+	
+	 margin: auto;
+	width: 50%;
+	padding: 10px;
+	margin-right: 25%;
+}
+/*bottom for a book's web-page list item*/
+.bottombookpage li {
+	display: inline-block; 
+	margin-left: 4%;
+	padding-top: 23 px;
+	margin-right: 0;
+}
+
+
+/*bottom for the 'incorrect details' page */
+.bottomincorrect {
+	margin-left: 0;
+	margin-right:0;
+	background: #5f9c82;
+	padding-bottom: 1%;
+	margin-top: 37%;
+}
+
+
+
+/*bottom for the 'incorrect details' page hyperlinks */
+.bottomincorrect a {
+ color: white;  
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px; 
+ position: center;
+ }
+
+/*bottom for the 'incorrect details' page list*/
+.bottomincorrect ul {
+	margin-left: 5%;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	margin-right: 14%;
+}
+
+/*bottom for the 'incorrect details' page list item */
+.bottomincorrect li {
+	display: inline-block; 
+	margin-left: 4%;
+	padding-top: 23 px;
+	margin-right: 0;
+}
+
+
+
+
+
+/*normal bottom */
+.bottom {
+	margin:0;
+	background: #5f9c82;
+	padding-bottom: 1%;
+	
+}
+/*bottom hyperlink*/
+.bottom a {
+ color: white;  
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px; 
+ position: center;
+ }
+/*bottom list */
+.bottom ul {
+	margin-left: 5%;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	margin-right: 14%;
+}
+/*bottom list item */
+.bottom li {
+	display: inline-block; 
+	margin-left: 4%;
+	padding-top: 23 px;
+	margin-right: 0;
+}
+/*h3 */
+h3 {
+	border: 1px #5f9c82;
+	border-radius: 5px;
+	background: #5f9c82;
+	text-align: center;
+	width:20%;
+	margin: auto;
+	padding: 10px;
+}
+/*h3 hyperlinks */
+h3 a { 
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px; 
+ font-weight: 398;
+}
+/*h3 hyperlink hover effect*/
+h3 a:hover {
+	color: #3c6352;
+}
+/*h4*/
+h4 {
+	text-align: center;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom:1%;
+	text-transform: uppercase;
+	font-size: 10 px;
+	
+	margin: 0;	
+}
+/*h4's hyperlinks*/
+h4 a {
+	
+	color: black;
+}
+/*variant 2 of h4*/
+.h4two {
+	text-align: center;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom:1%;
+	text-transform: uppercase;
+	font-size: 10 px;
+
+	border: 1px #5f9c82;
+	border-radius: 5px;
+	background: #5f9c82;
+
+	width:20%;
+	padding: 10px;
+	color: white;
+
+}
+
+
+/*variant 2 of h3*/
+.h3two {
+	border: 1px #5f9c82;
+	border-radius: 5px;
+	background: #5f9c82;
+	text-align: center;
+	width:20%;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom:1%;
+	padding: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px; 
+}
+
+
+/*variant 3 of h3 */
+.h3three {
+	border: 1px #5f9c82;
+	border-radius: 5px;
+	background: #5f9c82;
+	text-align: right;
+	width:20%;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom:1%;
+	padding: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px; 
+}
+
+
+/*book wheel display*/
+.book-wheel {
+	margin-right: auto;
+	margin-left: auto;
+	
+	max-width: 960px;
+	
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 5%;
+}
+/*book wheel display list*/
+.book-wheel ul {
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+/*center text*/
+.centertext {
+	text-align: center;
+	margin:0;
+ }
+ 
+ 
+ /*create small margin above element*/
+ .stretchup {
+	 margin-top: 1%;
+ }
+ /*create large margin above element*/
+ .stretchuploads {
+	 margin-top: 35%;
+ }
+
+  /*create small margin below element*/
+ .stretchdown {
+	 margin-bottom: 1%;
+ }
+/*wrapper for login form element*/
+.loginform {
+	text-align: center;
+	margin-bottom: 5%;
+	
+}
+/*hidden (form) element*/
+.hiddenform {
+	display: none;
+}
+
+/*textboxfortickets*/
+.ticketcomment {
+    height:200px;
+    font-size:14pt;
+}
+
+/*text-align right*/
+.logout {
+	text-align: right;
+	margin-right: 2%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> 
+<body>
+<head> 
+<link href = "sweetshelf.css" rel = "stylesheet" type = "text/css">
+</head>
+<header> 	
+<a href = "landing page.html"><img src = "logo.jpg" ALT= "Oops! This image is missing from your browser." width = '135' height = '40' class = "logo"> </a>
+<!--header's navbar-->	
+<nav>
+<ul> 
+<li> <a href = "Fiction page.html"> Fiction </a> </li>
+<li> <a href = "Non-fiction books.html"> Non-fiction </a> </li>
+<li> <a href = "Educational.html"> Educational </a> </li>
+<li> <a href = "kidsbooks.html"> Children's </a> </li>
+<li> <a href = "Customer Support.html"> Customer Support </a> </li>
+<li> <form action = "Genericbooklink.php" method = "post">  <input type="text" placeholder="Search for a book..." name = "bookname"> <input type = "submit" value = "Search" name = "display"> </form> </li>
+</ul>
+</nav>
+</header>
+<div class = "logout">
+<form action = "index.html" method = "post"> <input type = "submit" value = "Log Out"> </form> </div> 
+
+
+
+<!--Every few elements are surrounded by a generic 'wrapper' (div) class to keep all elements on the webpage arranged and stacked properly, preventing adjacency issues.-->
+<div class = "wrapper"> 
+<div class = "wrapper"> 
+ <!--'book-wheel' is a class designed to contain the lists of books, containing their individual profiles - including image, title, author, etc.-->
+<div class = "book-wheel">
+<h3 class = "h3two"> Children's books </h3 class = "h3two">
+<ul> 
+<!--every genre page presents the selection of books that are stored in the bookstock table. Clicking the purchase form button for any book leads to a unique page where the data for that is fetched from the database, which can be followed up by a purchase.-->
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "kingarthurandhisknightsoftheroundtable.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> King Arthur and His Knights of the Round Table </h5> </div> <div class = "book_author"> Roger Lancelyn Green </div> <div class = "book_price"> &#163 7.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "King Arthur and His Knights of the Round Table" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div>  </div> </div> </li>
+																																																																																																													                                                           <!---this form and its submit button sends the hidden input of the book's name in the bookstock table (of the db) to the php page 'genericbooklink.php' that then handles the form data and fetches the book's data using an SQL request to form a unique page that display's that book's information and allows the continuation of a purchase-->	
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "thetalkingpencil.jpg" ALT = "Oops! This image is missing from your browser."  width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> The Talking Pencil </h5> </div> <div class = "book_author"> Craig Pankhurst </div> <div class = "book_price"> &#163 4.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "The Talking Pencil" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "sillymonkey.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> Silly Monkey </h5> </div> <div class = "book_author"> Judith Rees  </div> <div class = "book_price"> &#163 4.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Silly Monkey" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form>  </div> </div> </div>  </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "whatisthat.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> What Is That </h5> </div> <div class = "book_author"> Kate Andreae  </div> <div class = "book_price"> &#163 6.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "What Is That" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form>  </div> </div> </div>  </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "yellowtiger.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Yellow Tiger </h5> </div> <div class = "book_author"> Sylva Russel </div> <div class = "book_price"> &#163 8.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Yellow Tiger" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form>  </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "piratewarriors.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Pirate Warriors </h5> </div> <div class = "book_author"> Eric Smallman </div> <div class = "book_price"> &#163 5.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Pirate Warriors" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div>  </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "fox.jpg" ALT = "Oops! This image is missing from your browser."  width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> Fox Knight </h5> </div> <div class = "book_author"> Maizie Carle  </div> <div class = "book_price"> &#163 4.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Fox Knight" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "trampoline.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> 10 Fun Trampoline Tricks </h5> </div> <div class = "book_author"> Sierra West </div> <div class = "book_price"> &#163 4.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "10 Fun Trampoline Tricks" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div></div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "justkate.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Just Kate! </h5> </div> <div class = "book_author"> Kate O'Neill </div> <div class = "book_price"> &#163 6.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Just Kate!" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div></div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "seahorse.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Curious Seahorse </h5> </div> <div class = "book_author"> Hanno Rosen  </div> <div class = "book_price"> &#163 5.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Curious Seahorse" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "profwizard.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Professor Wizard </h5> </div> <div class = "book_author"> David Rauf </div>  <div class = "book_price"> &#163 6.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Professor Wizard" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div></div> </div> </li>
+</ul>
+</div>
+<div class = "book-wheel">
+<ul>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "frogbutterfly.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> The Frog & The Butterfly </h5> </div> <div class = "book_author"> Amy Smallman  </div> <div class = "book_price"> &#163 6.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "The Frog & The Butterfly" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "gecko.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a>  </div> <div class = "book_bo	dy"> <div class = "book_title"> <h5> Goofy Gecko </h5> </div> <div class = "book_author"> Poppy Hailwood </div> <div class = "book_price"> &#163 4.00 </div> <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Goofy Gecko" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div>  </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "boat.jpg" ALT = "Oops! This image is missing from your browser."width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Going on a Boat </h5> </div> <div class = "book_author"> David Oliver </div> <div class = "book_price"> &#163 6.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Going on a Boat" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div></div> </li>
+</ul>
+</div>
+<div class = "book-wheel">
+<ul>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "aliceinwonderland.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> Alice In Wonderland </h5> </div> <div class = "book_author"> Lewis Carroll </div> <div class = "book_price"> &#163 5.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Alice In Wonderland" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div></div>  </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "charlieinspace.jpg" ALT = "Oops! This image is missing from your browser." width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> Charlie In Space </h5> </div> <div class = "book_author"> Kevin Jefferson </div> <div class = "book_price"> &#163 6.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Charlie In Space" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div></div>  </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "cinderella.jpg" ALT = "Oops! This image is missing from your browser."  width = "143" height = "218"> </a>  </div> <div class = "book_body"> <div class = "book_title"> <h5> Cinderella </h5> </div> <div class = "book_author"> Charles Perrault </div> <div class = "book_price"> &#163 11.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Cinderella" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div> </div> </div> </li>
+<li class = "book-list"> <div class = "book_profile"> <div class = "book_image"> <a href = "#"> <img src = "sleepingbeauty.jpg" ALT = "Oops! This image is missing from your browser."  width = "143" height = "218"> </a> </div> <div class = "book_body"> <div class = "book_title"> <h5> Sleeping Beauty </h5> </div> <div class = "book_author"> Charles Perrault </div> <div class = "book_price"> &#163 8.00 </div>  <div class = "book_link"> <form action = "Genericbooklink.php" method = "post"> <input type = "hidden" value = "Sleeping Beauty" name = "bookname"> <input type = "submit" value = "Purchase" name = "display"> </form> </div></div> </div>  </li>
+</ul>
+</div>
+</div>
+</div>
+
+<br>
+<!--'bottom'/'bottomincorrect'/'bottombookage' (varying margins), basically a footer. Similar traits for links and lists (+list items) as the header navbar.-->
+<div class = "bottom">
+ <ul> 
+<li> <a href = "FAQ.html" > FAQ </a> </li>
+<li> <a href = "Terms of Use.html"> Terms &#38 Conditions </a> </li>
+<li> <a href = "Privacy Policy.html"> Privacy Policy </a> </li>
+<li> <a href = "About Us.html"> About Us </a> </li>
+</ul>
+ </div>
+
+
+</html>

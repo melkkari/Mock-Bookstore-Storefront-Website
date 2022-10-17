@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+<link href = "sweetshelf.css" rel = "stylesheet" type = "text/css">
+ <!--javascript function to execute the basic back button functionality of the user's browser. labelled as 'goBack()'.-->
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</head>
+<header> 	
+<a href = "landing page.html"><img src = "logo.jpg" ALT= "Oops! This image is missing from your browser." width = '135' height = '40' class = "logo"> </a>
+<nav>
+<ul> 
+<li> <a href = "Fiction page.html"> Fiction </a> </li>
+<li> <a href = "Non-fiction books.html"> Non-fiction </a> </li>
+<li> <a href = "Educational.html"> Educational </a> </li>
+<li> <a href = "kidsbooks.html"> Children's </a> </li>
+<li> <a href = "Customer Support.html"> Customer Support </a> </li>
+<li> <form action = 'Genericbooklink.php' method = 'post'>  <input type='text' placeholder='Search for a book...' name = 'bookname'> <input type = 'submit' value = 'Search' name = 'display'> </form> </li>
+</ul>
+</nav>
+</header>
+
+<body>
+
+
+<div class = 'wrapper'>
+<div class = 'center'>
+<h4 class = "stretchuploads"> Sorry, we couldn't find any content for your search. </h4> 
+<br>
+<form action = "Genericbooklink.php" method = "post">  <input type="text" placeholder="Search for a book..." name = "bookname"> <input type = "submit" value = "Search" name = "display"> </form> 
+<br>
+(Remember to check your spelling)
+ <!--button element that when clicked (affirmed by 'onclick'), the javascript function, 'goBack()' is executed. The button element is displayed as 'Return'.-->
+</div>
+</div>
+
+
+
+
+
+
+</body>
+
+<div class = "bottomincorrect">
+ <ul> 
+<li> <a href = "#" > FAQ </a> </li>
+<li> <a href = "#"> Terms &#38 Conditions </a> </li>
+<li> <a href = "#"> Privacy Policy </a> </li>
+<li> <a href = "#"> About Us </a> </li>
+</ul>
+ </div>
+
+
+</html>
